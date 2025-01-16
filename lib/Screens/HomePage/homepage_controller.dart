@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:fluttertoast/fluttertoast.dart';
 import 'package:get/get.dart';
 import '../../Models/news_model.dart';
 import 'homepage_repo.dart';
@@ -22,6 +23,7 @@ class HomepageController extends GetxController {
     isLoading.value = true;
     try {
       final categories = await homePageRepository.fetchNewsCategories();
+      Fluttertoast.showToast(msg: categories[0].categoryName);
       newsCategories.value = categories;
     } catch (e) {
       debugPrint("Error fetching news categories: $e");

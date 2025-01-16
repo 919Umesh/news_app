@@ -125,13 +125,9 @@ class HomePageScreen extends GetView<HomepageController> {
               Expanded(
                 child: ListView.builder(
                   padding: const EdgeInsets.all(16),
-                  // physics: const NeverScrollableScrollPhysics(),
-                  // scrollDirection: Axis.vertical,
-                  // shrinkWrap: true,
                   itemCount: controller.selectedCategory.articles.length - 1,
                   itemBuilder: (context, index) {
-                    final article =
-                        controller.selectedCategory.articles[index + 1];
+                    final article = controller.selectedCategory.articles[index + 1];
                     return GestureDetector(
                       onTap: () => Navigator.of(context).push(
                         MaterialPageRoute(
