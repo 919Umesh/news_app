@@ -12,7 +12,6 @@ class HomePageRepository extends BaseRepository {
 
     final data = response.data as Map<String, dynamic>;
 
-    // Convert JSON response to List of NewsCategoryModel
     return data.entries.map((entry) {
       final categoryName = entry.key;
       final articles = entry.value as List<dynamic>;

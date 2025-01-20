@@ -26,7 +26,7 @@ class HomepageController extends GetxController {
       Fluttertoast.showToast(msg: categories[0].categoryName);
       newsCategories.value = categories;
     } catch (e) {
-      debugPrint("Error fetching news categories: $e");
+      debugPrint("Error fetching news: $e");
     } finally {
       isLoading.value = false;
     }

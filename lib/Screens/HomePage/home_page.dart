@@ -19,7 +19,6 @@ class HomePageScreen extends GetView<HomepageController> {
           }
           return Column(
             children: [
-              // Header
               Padding(
                 padding: const EdgeInsets.all(16.0),
                 child: Row(
@@ -35,7 +34,6 @@ class HomePageScreen extends GetView<HomepageController> {
                 ),
               ),
 
-              // Categories horizontal list
               SizedBox(
                 height: 40,
                 child: ListView.builder(

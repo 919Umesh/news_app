@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:get/get_state_manager/src/simple/get_view.dart';
-import '../../Models/news_model.dart';
 import 'homepage_controller.dart';
 import 'package:url_launcher/url_launcher.dart';
 
